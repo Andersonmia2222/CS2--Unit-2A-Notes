@@ -30,11 +30,52 @@ public class Main {
    // can you compare ints and doubles?
    double z = 6;
    system.out.println( x== z ); // true (6 and 6.0 are the same thing)
+// determine what value/ condition your choice rests on
+// Ex: Using the elevator at BWL depends on time 
+double time = 7.75; //means 7:45 AM  
+ 
+if (time < 8) {
 
+   // if statment BODY 
+   System.out.println( "You can take the elevator!"); 
+    
+} 
 
+   System.out.println( "The elevator is only available before 8 AM!"); 
+// two way selection: If block + else block 
 
+if ( time < 8 ) {
 
+      System.out.println("Eligible for elevator"); 
+
+}
+else {
+    // Statemnt in else blick runs when if block is false 
+     System.out.println("take the satirs");
+
+}
+
+public class Main {
+   public static void mIN (STRING []args) {
 
 
    }
+
+boolean heads = true;
+if ( heads == true) {
+   System.out.println("Flipped heads ! Wear white."); 
+
 }
+else {
+ System.out.println( "Flipped heads! Wear black.");
+
+}
+
+}
+
+
+   }
+
+}
+
+
