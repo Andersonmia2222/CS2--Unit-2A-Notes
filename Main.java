@@ -1,16 +1,17 @@
 public class Main {
 
+
+
    public static void main(String []args) {
       // BOOLEAN VARIABLES can only hold true or false 
       boolean lightsOn = false;
-      Boolean lightsOn = false;
       boolean dannyPresent = true; 
 
 
    // BOOLEAN EXPRESSIONS are like questions( or comparison)
    // where the only possible answers are true and false
-   boolean exp1 = (danny = true) // is danny here? 
-   boolean exp2 = (lightsOn ! = true) //are the lights NOT on? (off)
+   boolean exp1 = (danny = true); // is danny here? 
+   boolean exp2 = (lightsOn != true); //are the lights NOT on? (off)
    // comparing numerical values 
 
    int x = 6;
@@ -19,13 +20,13 @@ public class Main {
    // check for equality using the == operator 
    system.out.println( x== y ); // you 
    //check for NOT equal using the != operator 
-   boolen exp3 = (x != y) //store  the boolean exp result in a veriable 
+   boolen exp3 = (x != y); //store  the boolean exp result in a veriable 
    system.out.println( x < y); // true 
    system.out.println( x > y); // false
    system.out.println( x <= y); // true
    system.out.println( x >= y); // false
    system.out.println( x >= y); // true (ORDER MATTERS w/rel. operators)
-   System.out.println( y == y) // true 
+   System.out.println( y == y); // true 
 
    // can you compare ints and doubles?
    double z = 6;
@@ -55,12 +56,6 @@ else {
 
 }
 
-public class Main {
-   public static void mIN (STRING []args) {
-
-
-   }
-
 boolean heads = true;
 if ( heads == true) {
    System.out.println("Flipped heads ! Wear white."); 
@@ -71,11 +66,32 @@ else {
 
 }
 
-}
+// MULTI-WAY SELECTION
+//1. NESTING if statements is like asking a "follow up"
 
+int age = 19;
+boolean havePermit = false;
+System.out.println("lets see if you can take this road test...");
+if( age >= 16 ) {
+   system.out.println(" Alright, I guess you're old enough..."); 
+   // after passing the first condtiton (age >= 16)
+   // you ask a follow up (another if statemnt)
+
+   if ( havePermit == true) {
+   System.out.println("Fine, get in the car");
 
    }
 
 }
+else {
+   System.out.println("You're too young. Grow up.");
+
+}
+
+
+   
+
+}
+   }
 
 
