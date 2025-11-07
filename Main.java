@@ -88,10 +88,35 @@ else {
 
 }
 
+// 2. ELSE IF BLOCKS(chained condition)
+// when you are accounting for many possible answers 
+ int battery = 19;
+ // always start the block with an if statement 
+ if ( battery >= 95) {
+   System.out.println( "unplug your phone!"); 
 
+
+ }
+
+ // order matters for else if blocks 
+ // as soon as a condition is met the rest of the chain is SKIPPED 
+ else if ( battery <= 20 ) {
+   System.out.println(" LOW POWER MODE"); 
+
+ }
+ else if ( battery < 50) {
+System.out.println("plug in my phone soon..."); 
+
+else {
+
+   System.out.println("otherwise...");
+}
+
+
+ }
    
 
-}
-   }
+}  // closes the main METHOD 
+}  // this closes the main class
 
 
