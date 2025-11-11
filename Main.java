@@ -1,7 +1,4 @@
 public class Main {
-
-
-
    public static void main(String []args) {
       // BOOLEAN VARIABLES can only hold true or false 
       boolean lightsOn = false;
@@ -106,6 +103,7 @@ else {
  }
  else if ( battery < 50) {
 System.out.println("plug in my phone soon..."); 
+ }
 
 else {
 
@@ -113,8 +111,73 @@ else {
 }
 
 
+
+// COMPOUND boolean expressions 
+// to test TWO conditions in an if statement
+
+boolean cleanedRoom = false;
+boolean didHomework = false;
+
+
+// The AND (&&) operator joins two expressions 
+// only comes out to TRUE if BOTH ARE TRUE!
+
+   if ((cleanedRoom == true)  && (didHomework)) {
+
+   System.out.println("Go have fun!"); 
+
+}
+
+// the OR(||) operator joins two expressions 
+// comes out to TRUE if AT LEAST ONE is TRUE
+// (less restrictive condition Than AND)
+ if ((cleanedRoom == true) || (didHomework == true)){
+ System.out.println("the less strict parents are fine with you going out!");
  }
+
+
+ // The NOT operator can be used to negate a boolean expression
+ // a boolean expression
+ if (! (didHomework == true)) {
+    System.out.println("Do your code collab! The class is depending on you!");
+
+ }
+ // REMINDAR: boolean varibales can be used instead of full expressions with (relational operators)
+ if ( !didHomework) {
+System.out.println("You did not do your homework!");
+
+ }
+
+ // IMPORTANT NOTE ABOUT STRINGS:
+ //(and other Object data types)
+// You can't use the == operator to check equality 
+// instead, use a String Method called .equals()
+String course = "ap Computer Science"; 
+if (course.equals ("AP Computer Science")) {
+   System.out.println("Time to learn JAVA!"); 
+
+}
+// .equals is CASE-SENSITIVE
+// it checks every single character in order between two strings
+
+
+String message1 = "Hello World";
+String message2 = "Hello World";
+if ( message1.equals(message2)) {
+   System.out.println("The message match perfectly");
+
+}
+// you can mix string variables with string literals 
+// ex) both are string literals below 
+if("hi".equals("hi")) {
+   System.out.println("hi :)");
    
+
+}
+
+
+
+
 
 }  // closes the main METHOD 
 }  // this closes the main class
